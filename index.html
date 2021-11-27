@@ -7,7 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevBDarius</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/44057641c5.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_D6eyHn0LjmGYwhBEntOlB");
+      console.log('EmailJS initialized');
+    })();
+  </script>
+
 </head>
 
 <body>
@@ -78,25 +87,36 @@
         <h3 class="modal__title modal__title--about">Here's a little about me</h3>
         <h4 class="modal__subtitle modal__subtitle--about">Frontend software engineer</h4>
         <p class="modal__para">
-          Lorem <span class="orange">ipsum</span>, dolor sit amet consectetur <span class="orange">adipisicing</span> elit. Ex ipsum eos, quia facere reprehenderit, <span class="orange">autem</span> hic architecto repellat harum, at quam ratione quis officiis <span class="orange">consectetur</span> cumque nobis recusandae eaque blanditiis.
+          Lorem <span class="orange">ipsum</span>, dolor sit amet consectetur <span class="orange">adipisicing</span>
+          elit. Ex ipsum eos, quia facere reprehenderit, <span class="orange">autem</span> hic architecto repellat
+          harum, at quam ratione quis officiis <span class="orange">consectetur</span> cumque nobis recusandae eaque
+          blanditiis.
           <br>
           Lorem ipsum dolor
         </p>
         <div class="modal__languages">
           <figure class="modal__language">
-            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+            <img class="modal__language--img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+              alt="">
             <span class="language__name">HTML</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+            <img class="modal__language--img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+              alt="">
             <span class="language__name">HTML</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+            <img class="modal__language--img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+              alt="">
             <span class="language__name">HTML</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+            <img class="modal__language--img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+              alt="">
             <span class="language__name">HTML</span>
           </figure>
         </div>
@@ -108,7 +128,7 @@
         <h4 class="modal__subtitle modal__subtitle--contact">
           I'm currently open to new opportunities.
         </h4>
-        <form action="" id="contact__form">
+        <form action="" id="contact__form" onsubmit="contact(event)">
           <div class="form__item">
             <label class="form__item--label">Name</label>
             <input class="input" type="text" name="user_name" required>
