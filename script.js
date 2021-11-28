@@ -2,13 +2,22 @@
 // template_zjc3dh6
 // service_6s7dn1m
 // user_D6eyHn0LjmGYwhBEntOlB
+let isModalOpen = false;
+let contrastModeOn = false;
+
+function toggleContrast() {
+  contrastModeOn = !contrastModeOn;
+  contrastModeOn ?
+    document.body.classList += " dark-theme" :
+    document.body.classList.remove("dark-theme");
+}
 
 function contact(event) {
   event.preventDefault();
   const loading = document.querySelector('.modal__overlay--loading');
   const success = document.querySelector('.modal__overlay--success');
   loading.classList += " modal__overlay--visible"
-  
+
   emailjs.sendForm(
     'service_6s7dn1m',
     'template_zjc3dh6',
@@ -26,7 +35,6 @@ function contact(event) {
 
 }
 
-let isModalOpen = false;
 function toggleModal() {
   console.log('toggled Modal');
   if (!isModalOpen) {
