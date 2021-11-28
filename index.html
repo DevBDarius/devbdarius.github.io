@@ -61,7 +61,7 @@
         <h1 class="title">Hey! I am</h1>
         <h1 class="title orange">DevBDarius</h1>
         <p class="header__para">
-          I'm a <b class="orange">Frontend Software Engineer</b> with a passion for building polished web apps
+          I'm a <b class="orange">Frontend Software Engineer</b> with a passion for building polished web apps. Here's a bit more <b class="orange click" onclick="toggleModal()">about me.</b>
         </p>
       </div>
       <div class="social__list">
@@ -76,7 +76,7 @@
         </a>
       </div>
     </header>
-    <button class="mail__btn click">
+    <button class="mail__btn click" onclick="toggleModal()">
       <i class="fas fa-envelope"></i>
     </button>
     <a href="#projects" class="scroll">
@@ -89,8 +89,7 @@
         <p class="modal__para">
           Lorem <span class="orange">ipsum</span>, dolor sit amet consectetur <span class="orange">adipisicing</span>
           elit. Ex ipsum eos, quia facere reprehenderit, <span class="orange">autem</span> hic architecto repellat
-          harum, at quam ratione quis officiis <span class="orange">consectetur</span> cumque nobis recusandae eaque
-          blanditiis.
+          harum, at quam ratione quis officiis <span class="orange">consectetur</span> cumque.
           <br>
           Lorem ipsum dolor
         </p>
@@ -122,6 +121,7 @@
         </div>
       </div>
       <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
         <h3 class="modal__title modal__title--contact">
           Let's have a chat!
         </h3>
@@ -152,7 +152,6 @@
           Thanks for the message! Looking forward to speaking to you soon.
         </div>
       </div>
-      <i class="fas fa-times modal__exit click"></i>
     </div>
   </section>
 

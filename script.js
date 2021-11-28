@@ -25,3 +25,14 @@ function contact(event) {
   })
 
 }
+
+let isModalOpen = false;
+function toggleModal() {
+  console.log('toggled Modal');
+  if (!isModalOpen) {
+    document.body.classList += " modal--open";
+  } else {
+    document.body.classList.remove("modal--open")
+  }
+  isModalOpen = !isModalOpen;
+}
