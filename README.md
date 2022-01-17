@@ -1,3 +1,3 @@
 # [DevBDarius](https://devbdarius.github.io/)
 
-My personal webpage with all my software projects listed
+My personal webpage showcasing some of the software projects I've worked on
