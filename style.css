@@ -534,6 +534,7 @@ PROJECTS
 }
 
 .project__img {
+  max-height: 600px;
   width: 100%;
   transition: all 600ms ease;
 }
